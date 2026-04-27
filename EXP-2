@@ -1,0 +1,53 @@
+#ALGORITHM
+
+START
+SET n = 5
+
+IF n is greater than 0
+ PRINT "Positive Number"
+ELSE
+ PRINT "Negative or Zero"
+
+PRINT numbers from 1 to n using for loop
+
+SET i = 1
+WHILE i is less than or equal to n
+ PRINT i
+ INCREMENT i by 1
+
+STOP
+
+
+#CODE
+n = 5
+
+if n > 0:
+    print("Positive Number")
+else:
+    print("Negative or Zero")
+
+print("For Loop:")
+for i in range(1, n + 1):
+    print(i)
+
+print("While Loop:")
+i = 1
+while i <= n:
+    print(i)
+    i += 1
+
+#OUTPUT
+
+Positive Number
+For Loop:
+1
+2
+3
+4
+5
+While Loop:
+1
+2
+3
+4
+5
