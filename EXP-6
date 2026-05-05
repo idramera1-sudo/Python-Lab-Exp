@@ -1,0 +1,39 @@
+#Algorithm
+	1.	Start
+	2.	Create dictionary
+	3.	Add elements
+	4.	Delete elements
+	5.	Display keys and values
+	6.	Stop
+
+#Code
+
+d = {}
+
+n = int(input("Enter number of items: "))
+
+for i in range(n):
+    key = input("Enter key: ")
+    value = int(input("Enter value: "))
+    d[key] = value
+
+d["new"] = 100
+
+if len(d) > 0:
+    d.pop(list(d.keys())[0])
+
+print("Dictionary:", d)
+
+for k in d:
+    print(k, d[k])
+
+#Output 
+
+Enter number of items: 2
+Enter key: a
+Enter value: 1
+Enter key: b
+Enter value: 2
+Dictionary: {'b': 2, 'new': 100}
+b 2
+new 100
