@@ -1,0 +1,33 @@
+#Algorithm
+	1.	Start
+	2.	Input a string
+	3.	Find length
+	4.	Convert to upper and lower case
+	5.	Reverse the string
+	6.	Display results
+	7.	Stop
+
+#Code
+
+s = input("Enter a string: ")
+
+length = len(s)
+upper = s.upper()
+lower = s.lower()
+reverse = ""
+
+for i in range(len(s)-1, -1, -1):
+    reverse = reverse + s[i]
+
+print("Length:", length)
+print("Upper:", upper)
+print("Lower:", lower)
+print("Reverse:", reverse)
+
+#Output 
+
+Enter a string: hello
+Length: 5
+Upper: HELLO
+Lower: hello
+Reverse: olleh
