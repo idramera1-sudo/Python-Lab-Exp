@@ -1,0 +1,26 @@
+#Algorithm
+	1.	Start
+	2.	Import re
+	3.	Input string
+	4.	Define pattern
+	5.	Search pattern
+	6.	Display result
+	7.	Stop
+
+#Code
+
+import re
+
+text = input("Enter string: ")
+
+pattern = r"[0-9]+"
+
+result = re.findall(pattern, text)
+
+print("Numbers found:", result)
+
+#Output 
+
+Enter string: abc123def45
+Numbers found: ['123', '45']
+
