@@ -1,0 +1,38 @@
+#Algorithm
+	1.	Start
+	2.	Import libraries
+	3.	Input data
+	4.	Plot graph
+	5.	Display graph
+	6.	Stop
+
+#Code
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+x = []
+y = []
+
+n = int(input("Enter number of points: "))
+
+for i in range(n):
+    x.append(int(input()))
+    y.append(int(input()))
+
+df = pd.DataFrame({"x": x, "y": y})
+
+plt.plot(df["x"], df["y"])
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Line Graph")
+plt.show()
+
+#Output
+
+Enter number of points: 2
+1
+2
+2
+4
+(Graph displayed)
