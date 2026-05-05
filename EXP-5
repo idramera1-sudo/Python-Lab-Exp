@@ -1,0 +1,29 @@
+#Algorithm
+	1.	Start
+	2.	Create a tuple
+	3.	Access elements
+	4.	Count occurrence
+	5.	Find index
+	6.	Display results
+	7.	Stop
+
+#Code
+
+t = (1, 2, 3, 2, 4)
+
+print("Tuple:", t)
+
+print("Element at index 2:", t[2])
+
+c = t.count(2)
+i = t.index(3)
+
+print("Count of 2:", c)
+print("Index of 3:", i)
+
+#Output
+
+Tuple: (1, 2, 3, 2, 4)
+Element at index 2: 3
+Count of 2: 2
+Index of 3: 2
