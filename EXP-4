@@ -1,0 +1,35 @@
+#Algorithm
+	1.	Start
+	2.	Create a list
+	3.	Add elements
+	4.	Remove elements
+	5.	Sort the list
+	6.	Display list
+	7.	Stop
+
+#Code
+
+l = []
+
+n = int(input("Enter number of elements: "))
+
+for i in range(n):
+    x = int(input())
+    l.append(x)
+
+l.append(10)
+
+if len(l) > 0:
+    l.pop(0)
+
+l.sort()
+
+print("Final List:", l)
+
+#Output
+
+Enter number of elements: 3
+5
+2
+8
+Final List: [2, 8, 10]
